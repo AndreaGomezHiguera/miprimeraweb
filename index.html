@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="encabezado">
+                <a href="index.html">
+                    <img src="Imágenes/heart-solid.svg" alt="Logo página Mi primera web" width="50" title="Logo página Mi primera web">
+                </a>
+                <nav>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                        <ul>
+                            <li>Inicio</li>
+                            <li>Acerca de mí</li>
+                            <li>Trabajos</li>
+                            <li>Servicios</li>
+                            <li>Contacto</li>
+                        </ul>
+                </nav> 
+            </div>      
+        </header>
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2>Acerca de mí</h2>
+                    <p class="parrafo1">¡Bienvenido a mi página web! Aquí aprenderás más sobre mí.</p>
+                    <p class="parrafo2">Me llamo Tere, nací en Buenos Aires y vivo en Caballito. Me gusta el helado y salir a pasear en días de sol. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen.</p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="Imágenes/Tere.jpg" alt="Imagen personal" width="300" title="Imagen personal">
+                </div>
+            </section>
+            <section class="seccion-2">
+                <img src="Imágenes/Carrusel.jpg" alt="Imagen de carrusel" title="Imagen de carrusel">
+            </section>
+            <section class="seccion-3">
+                <div class="trabajos">
+                    <article>
+                        <div class="experiencia-1">
+                            <img src="Imágenes/Borrador primer logo Fundación Invenire.jpg" alt="Logo Fundación Invenire" title="Logo Fundación Invenire">
+                            <h2>Experiencia laboral 1</h2>
+                            <p>
+                                <strong>Nombre de la empresa o entidad:</strong> Fundación Invenire – Servicios Psicológicos
+                                <br><br>
+                                <strong>Jefe inmediato:</strong> César Augusto Quiñonez Molano – Presidente de la Junta Directiva
+                                <br><br>
+                                <strong>Cargo:</strong> Psicóloga
+                                <br><br>
+                                <strong>Ingreso:</strong> 8 de agosto de 2019 (vinculación vigente)
+                                <br><br>
+                                <strong>Funciones:</strong> Elaboración, dirección y coordinación de talleres de psicoeducación en diferentes temáticas del campo y brindar atención psicoterapéutica individual a niños, adolescentes y adultos.
+                                <br><br>
+                                <strong>Logros:</strong> Conocimientos en diferentes áreas de la psicología, en procesos psicológicos del ser humano y en el desarrollo y ejecución de talleres de psicoeducación.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="experiencia-2">
+                            <img src="Imágenes/logo-Universidad-Nacional.png" alt="logo Universidad Nacional de Colombia" title="Logo Universidad Nacional de Colombia">
+                            <h2>Experiencia laboral 2</h2>
+                            <p>
+                                <strong>Nombre de la empresa o entidad:</strong> Dirección Nacional de Admisiones (DNA) de la Universidad Nacional de Colombia
+                                <br><br>
+                                <strong>Cargo:</strong> Profesional de apoyo
+                                <br><br>
+                                <strong>Ingreso:</strong> 15 de julio de 2019 (vinculación vigente)
+                                <br><br>
+                                <strong>Dirección:</strong> Calle 44 No 45 - 67 Unidad Camilo Torres Bloque B3 - Bogotá
+                                <br><br>
+                                <strong>Teléfono:</strong> 3165000 Ext. 10706 Bogotá
+                                <br><br>
+                                <strong>Funciones:</strong> Procesar, registrar y analizar datos e información de los procesos de inscripción de los aspirantes a los Programas de Admisión Especial (PAES) y de las personas con discapacidad; gestionar ajustes razonables para la presentación de las pruebas de admisión a pregrado y posgrado de los aspirantes con limitaciones; y apoyar en la organización de las aplicaciones de la prueba de admisión al nivel de formación de pregrado que se realizan dentro y fuera de la ciudad de Bogotá.
+                                <br><br>
+                                <strong>Logros:</strong> Conocimientos en el área de admisiones de la Universidad Nacional de Colombia, en el campo de la discapacidad física, cognitiva y psicosocial y de las estrategias implementadas en el proceso de equiparación de oportunidades para el ingreso a esta institución de la población con limitaciones.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <div class="form-header">
+            <h1>Contacto</h1>
+            <p><em>¡Esperamos tu consulta!</em></p>
+            <form action="" method="get" class="formulario" id="form">
+              <div class="form-row">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" />
+              </div>
+              <div class="form-row">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="pepe@gmail.com" required />
+              </div>
+              <div class="form-row">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje"></textarea>
+              </div>
+              <div class="form-row">
+                  <button>Enviar</button>
+              </div>
+              <p class="alertas" id="alertas"></p>
+            </form>
+        </div>
+          <script src="script.js"></script>
+        <footer>
+            <div class="footer">
+                <h3>Redes sociales</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>WhatsApp</li>
+                        <li>X</li>
+                        <li>Instagram</li>
+                        <li>TikTok</li>
+                    </ul>
+                <a href="index.html">
+                    <img src="Imágenes/heart-solid.svg" alt="Logo página Mi primera web" width="50" title="Logo página Mi primera web">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
